@@ -11,7 +11,6 @@ gsap.registerPlugin(ScrollTrigger);
 interface CategoryPageProps {
   title: string;
   emoji: string;
-  page: string;
   images: string[];
   color: string;
 }
