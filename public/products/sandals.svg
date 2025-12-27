@@ -1,0 +1,8 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sandals -->
+  <rect x="20" y="30" width="80" height="60" rx="2" fill="#E84A73" stroke="#111" stroke-width="3"/>
+  <ellipse cx="60" cy="70" rx="30" ry="15" fill="#F6B6C8" stroke="#111" stroke-width="3"/>
+  <path d="M35 65 Q45 50 60 55 Q75 50 85 65" stroke="#111" stroke-width="3" fill="none"/>
+  <path d="M60 55 L60 45" stroke="#111" stroke-width="3"/>
+  <ellipse cx="60" cy="70" rx="20" ry="10" fill="#fff" stroke="#111" stroke-width="2"/>
+</svg>

@@ -1,0 +1,125 @@
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 5vw 40px;
+    min-height: 50vh;
+    background: linear-gradient(135deg, #FFF0F3 0%, #F6B6C8 50%, #FFE4EC 100%);
+}
+
+/* Left side - Collage */
+.collageSection {
+    flex: 1;
+    max-width: 45%;
+}
+
+.collageGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    max-height: 380px;
+}
+
+.collageItem {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(232, 74, 115, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.collageItem:hover {
+    transform: scale(1.03) rotate(1deg);
+}
+
+.collageItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collageItem1 {
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+.collageItem2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.collageItem3 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/* Right side - Content */
+.heroContent {
+    flex: 1;
+    max-width: 50%;
+}
+
+.heroHeadline {
+    margin-bottom: 20px;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    color: var(--deep-pink);
+}
+
+.heroLine {
+    display: block;
+}
+
+.heroSubtext {
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+    font-weight: 500;
+    margin-bottom: 20px;
+    max-width: 350px;
+    color: #444;
+}
+
+.heroCta {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 40px 16px 30px;
+        gap: 24px;
+        min-height: auto;
+    }
+
+    .collageSection {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .collageGrid {
+        max-height: 240px;
+    }
+
+    .heroContent {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .heroHeadline {
+        font-size: clamp(1.6rem, 6vw, 2.5rem);
+    }
+
+    .heroSubtext {
+        max-width: 100%;
+    }
+
+    .heroCta {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .heroCta :global(.btn) {
+        padding: 10px 16px;
+        font-size: 0.65rem;
+    }
+}

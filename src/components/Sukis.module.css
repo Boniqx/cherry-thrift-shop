@@ -1,0 +1,95 @@
+.sukis {
+    padding: 60px 5vw;
+    background: linear-gradient(135deg, var(--primary-pink) 0%, var(--light-pink) 100%);
+    text-align: center;
+}
+
+.sukisHeadline {
+    margin-bottom: 12px;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.sukisSubtitle {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    color: var(--deep-pink);
+    margin-bottom: 32px;
+    font-weight: 500;
+}
+
+.sukisGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.sukiCard {
+    position: relative;
+    aspect-ratio: 1;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sukiCard:hover {
+    transform: scale(1.08) rotate(2deg);
+    box-shadow: 0 12px 32px rgba(232, 74, 115, 0.3);
+}
+
+.sukiCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sukiOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+    padding: 24px 8px 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sukiCard:hover .sukiOverlay {
+    opacity: 1;
+}
+
+.sukiBadge {
+    color: white;
+    font-family: var(--font-display);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+}
+
+.sukisCta {
+    margin-top: 24px;
+    font-size: 0.875rem;
+    color: var(--ink);
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .sukis {
+        padding: 40px 16px;
+    }
+
+    .sukisGrid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .sukiCard {
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sukisGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

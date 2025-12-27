@@ -1,0 +1,10 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fashion Blouse -->
+  <rect x="25" y="25" width="70" height="70" rx="2" fill="#E84A73" stroke="#111" stroke-width="3"/>
+  <path d="M40 35 L50 30 L60 35 L70 30 L80 35 L85 50 L75 55 L75 85 L45 85 L45 55 L35 50 Z" fill="#fff" stroke="#111" stroke-width="3"/>
+  <circle cx="60" cy="50" r="3" fill="#111"/>
+  <circle cx="60" cy="62" r="3" fill="#111"/>
+  <circle cx="60" cy="74" r="3" fill="#111"/>
+  <path d="M48 40 L52 45" stroke="#111" stroke-width="2"/>
+  <path d="M72 40 L68 45" stroke="#111" stroke-width="2"/>
+</svg>

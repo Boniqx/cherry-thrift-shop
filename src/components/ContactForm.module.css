@@ -1,0 +1,91 @@
+.contact {
+    padding: 60px 5vw;
+    background: linear-gradient(180deg, var(--light-pink) 0%, var(--primary-pink) 100%);
+}
+
+.contactHeadline {
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.contactForm {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(232, 74, 115, 0.15);
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.formGroup label {
+    display: block;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    color: var(--ink);
+}
+
+.contactForm input,
+.contactForm textarea {
+    background: var(--soft-gray);
+    border: 2px solid transparent;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+    background: white;
+    border-color: var(--primary-pink);
+    box-shadow: 0 0 0 4px rgba(246, 182, 200, 0.3);
+}
+
+.submitBtn {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.submitBtn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.contactSuccess {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 48px 32px;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 12px 40px rgba(232, 74, 115, 0.15);
+}
+
+.successEmoji {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.contactSuccess h3 {
+    margin-bottom: 12px;
+    color: var(--deep-pink);
+}
+
+.contactSuccess p {
+    margin-bottom: 24px;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 40px 16px;
+    }
+
+    .contactForm {
+        padding: 24px;
+    }
+}
